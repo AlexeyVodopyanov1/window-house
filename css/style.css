@@ -1,0 +1,738 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+	font-family: 'FontName'; 
+	src: url(/fonts/font.ttf); 
+}
+body{
+    background: #F2F2F2;
+    font-family: 'Font name', sans-serif;
+}
+
+/* Шапка хаус и меню */
+.header{
+    width: auto;
+    height: 98px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.header__img{
+    padding-right: 25px;
+}
+.header__menu-laber{
+    display: none;
+}
+.header__nav .header__link{
+    padding: 0 20px 0 20px;
+    text-decoration: none;
+    color: black;
+}
+.header__link:hover{
+    color: #EF7F04;
+}
+
+.header__button{
+    display: flex;
+    margin: 0 10px 0 10px;
+}
+.header__button a{
+    color: white;
+    text-decoration: none;
+}
+.header__button img{
+    padding: 0 10px 0 10px;
+}
+.but1{
+    border: 1px solid #EF7F04;
+    width: 180px;
+    height: 40px;
+    align-items: center;
+    background-color: #EF7F04;
+    border-radius: 5px;
+}
+.but2{
+    border: 1px solid #3B3A63;
+    width: 180px;
+    height: 40px;
+    align-items: center;
+    background-color: #3B3A63;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 992px) {
+    .header{
+        display: flex;
+        justify-content: space-around;
+    }
+    .header__menu-laber{
+        display: inline;
+    }
+    .header__img{
+        padding-right: 250px;
+    }
+    .header__nav{
+        display: none;
+    }
+}
+
+/* Окна Хаус - */
+
+.fon-main{
+    background-image: url(../img/fon1.png);
+    background-size: 100% 100%;
+    margin: 0 auto;
+    height: 562px;
+    display: flex;
+    justify-content: center;
+}
+.form{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.form__left{
+    margin: 0px -90px 0px 70px
+}
+.form__text h3{
+    color: #EF7F04;
+    font-size: 30px;
+    margin-bottom: -25px;
+}
+.form__text h1{
+    width: 800px;
+    color: white;
+    font-size: 40px;
+}
+.form__top{
+    display: flex;
+    padding-left: 40px;
+}
+.form__top p{
+    color: white;
+    width: 200px;
+    padding-right: 40px;
+}
+
+.form__right{
+    margin: 0 auto;
+}
+.form__input{
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    width: 402px;
+    height: 428px;
+}
+.form__input h3{
+    margin-top: 30px;
+    text-align: center;
+    color: #2F2F51;
+}
+.input__top{
+    padding-left: 22px;
+}
+.input__top input{
+    outline: none;
+    border: none;
+    padding: 14px 13px;
+    width: 330px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    background-color: #E2E2E2;
+    border-radius: 3px;
+    display: block;
+    margin-bottom: 15px;
+}
+.input__box{
+    display: flex;
+    padding-left: 22px;
+}
+.input__box input{
+    width: 40px;
+    height: 55px;
+    margin-right: 10px;
+}
+.input__box p{
+    width: 400px;
+    font-size: 14px;
+}
+.input__but{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 196px;
+    height: 50px;
+}
+.input__but button {
+    outline: none;
+    border: none;
+    padding: 19px 40px;
+    color: #fff;
+    font-size: 14px;
+    background-color: #EF7F04;
+    border-radius: 3px;
+}
+.form__img{
+    margin: -85px 0 0 -86px;
+}
+
+@media screen and (max-width: 992px) {
+    .fon-main {
+        justify-content: flex-start;
+    }
+    .form__right{
+        display: none;
+    }
+}
+
+/* Наши услуги */
+
+.services__text{
+    text-align: center;
+    color: #2F2F51;
+    margin: 60px;
+}
+.services__block{
+    width: 1200px;
+    margin: 0 auto;
+}
+.block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.block__one{
+    background-image: url(../img/ser-fon1.png);
+    height: 268px;
+    width: 595px;
+}
+.block__two{
+    background-image: url(../img/ser-fon2.png);
+    height: 268px;
+    width: 595px;
+}
+.block__three{
+    background-image: url(../img/ser-fon3.png);
+    height: 268px;
+    width: 595px;
+}
+.block__four{
+    background-image: url(../img/ser-fon4.png);
+    height: 268px;
+    width: 595px;
+}
+.block__img-text{
+    display: flex;
+    padding: 30px 205px 35px 50px;
+    color: #2F2F51;
+    align-items: center;
+}
+.block__img-text img{
+    padding-right: 25px;
+}
+.block__top-text{
+    width: 300px;
+    margin: -34px 0px 0px 50px;
+}
+
+@media screen and (max-width: 992px) {
+    .services__block{
+        width: 600px;
+        margin: 0 auto;
+    }
+}
+
+/* тексты центр */
+.text-center{
+    margin: 0 auto;
+    width: 560px;
+    text-align: center;
+    margin-top: 70px;
+    color: #2F2F51;
+}
+.text-center button{
+    padding: 12px 30px;
+    color: #2F2F51;
+    border: none;
+}
+.text-center button:hover{
+    color: white;
+    border: 1px solid #EF7F04;
+    background-color: #EF7F04; 
+    border-radius: 5px;
+}
+
+/* блок продукция */
+.products{
+    margin: 0 auto;
+    width: 1145px;
+    height: 461px;
+    background-color: white;
+    margin-top: 30px;
+    display: flex;
+}
+.products__left{
+    background-image: url(../img/fon-products.png);
+    background-size: 100% 100%;
+    width: 567px;
+    height: 461px;
+}
+.products__right{
+    width: 578px;
+}
+.products__right h2{
+    color: #EF7F04;
+    margin: 50px 70px;
+}
+.products__right p{
+    color: #2F2F51;
+    margin: 50px 70px;
+    padding-right: 90px;
+}
+.description-line {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 10px 70px;
+
+}
+
+.description-line__name {
+    flex-basis: 151px;
+    display: flex;
+    align-self: flex-end;
+}
+
+.description-line__dot {
+    flex-grow: 2;
+    flex-basis: 100px;
+    width: 100%;
+    border-bottom: 1px dotted black;
+}
+
+.description-line__value {
+    flex-basis: 100px;
+}
+
+@media screen and (max-width: 992px) {
+    .products{
+        margin: 0 auto;
+        width: 880px;
+        margin-top: 30px;
+    }
+    .products__left{
+        width: 404px;
+    }
+}
+
+/* Гарантия качества */
+.kachestva{
+    background-image: url(../img/fon-kachestva.png);
+    margin: 0 auto;
+    width: 1200px;
+    height: 436px;
+    margin-top: 40px;
+}
+.kachestva__title{
+    background-image: url(../img/kachestva-title.svg);
+    background-size: 100% 100%;
+    width: 303px;
+    height: 94px;
+    margin: 0 auto;
+    padding-top: 100px;  
+}
+.kachestva__block{
+    display: flex;
+    align-items: center;
+}
+.kachestva__top{
+    margin: 0 auto;
+    width: 90px;
+    
+}
+.kachestva__top p{
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 992px) {
+    .kachestva{
+        margin: 0 auto;
+        width: 880px;
+        height: 679px;
+        margin-top: 40px;
+    }
+    .kachestva__block{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 60px;
+    }
+    .kachestva__top {
+        margin: 0 auto;
+        width: 221px;
+    }
+    .kachestva__top img{
+        padding-left: 60px;
+    }
+}
+/* Кнопка */
+.but2-2{
+    display: flex;
+    margin: 40px auto;
+    border: 1px solid #3B3A63;
+    width: 256px;
+    height: 54px;
+    align-items: center;
+    background-color: #3B3A63;
+    border-radius: 5px;
+}
+.but2-2 a{
+    color: white;
+    text-decoration: none;
+}
+.but2-2 img{
+    padding: 0 10px 0 40px;
+}
+
+/* О компании */
+.company{
+    margin: 0 auto;
+    display: flex;
+    background-color: white;
+    width: 1200px;
+    height: 461px;
+    margin-top: 30px;
+}
+.company__left{
+    width: 605px;
+}
+.company__img{
+    margin: 50px;
+}
+.company__text{
+    margin: 100px 50px 0 250px;
+}
+.company__right{
+    background-image: url(../img/fon-company.png);
+    width: 595px;
+    height: 461px;
+}
+
+@media screen and (max-width: 992px) {
+    .company{
+        width: 880px;
+        height: 461px;
+        margin-top: 30px;
+    }
+    .company__right{
+        width: 447px;
+    }
+    .company__text{
+        margin: 50px 103px 0 170px;
+    }
+}
+
+/* 6 блоки */
+.block-6{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 1108px;
+    height: 312px;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.block-6__top{
+    display: flex;
+}
+.block-6__text{
+    width: 235px;
+}
+.block-6__img{
+    padding-right: 20px;
+}
+.block-6__text span{
+    display: block;
+    text-transform: uppercase;
+    color: #2F2F51;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+@media screen and (max-width: 992px) {
+    .block-6{
+        width: 765px;
+        height: 393px;
+    }
+    .block-6__text{
+        width: 215px;
+        margin-bottom: 35px;
+    }
+}
+
+/* кнопка */
+.but1-1{
+    display: flex;
+    margin: 40px auto;
+    border: 1px solid #EF7F1A;
+    width: 312px;
+    height: 54px;
+    align-items: center;
+    background-color: #EF7F1A;
+    border-radius: 5px;
+}
+.but1-1 a{
+    color: white;
+    text-decoration: none;
+}
+.but1-1 img{
+    padding: 0 10px 0 40px;
+}
+/* Портфолио */
+.portfolio{
+    background-color: white;
+    margin: 0 auto;
+    width: 1200px;
+    height: 410px;
+}
+.portfolio__title{
+    color: #2F2F51;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 70px;
+}
+.portfolio__img{
+    display: flex;
+    margin: 65px;
+}
+.portfolio__img img{
+    width: 215px;
+    height: 215px;
+    padding-right: 69px;
+}
+
+@media screen and (max-width: 992px) {
+    .portfolio{
+        margin: 0 auto;
+        width: 992px;
+        height: 410px;
+    }
+    .portfolio__img img:last-child{
+        display: none;
+    }
+}
+/* Вопрос-ответ */
+.vopros{
+    background-color: #EF7F1A;
+    border-radius: 10px;
+    margin: -18px auto;
+    padding-bottom: 15px;
+    width: 1200px;
+}
+.vopros h3{
+    text-align: center;
+    color: white;
+    padding: 50px;
+}
+summary{
+    display: block;
+    cursor: pointer;
+    color: #2F2F51;
+    font-weight: 700;
+    padding: 15px 0 15px 0;
+    position: relative;
+    
+}
+details{
+    border: 2px solid #EEEEF3;
+    background-color: #EEEEF3;
+    width: 998px;
+    margin: 15px auto;
+    color: #2F2F51;
+    font-weight: 700;
+    padding-left: 30px;
+    transition: 0.4s;
+}
+summary:hover{
+    color: #EF7F04;
+}
+summary:after {
+    content: url(../img/down.svg);
+    float: right;
+    padding-right: 10px;
+    transform: rotate(0);
+    transform-origin: .2rem 50%;
+    transition: .25s transform ease;
+}
+
+details[open] > summary:after {
+    transform: rotate(180deg);
+    padding-right: 10px;
+}
+  
+details summary::-webkit-details-marker {
+    display:none;
+}
+
+@media screen and (max-width: 992px) {
+    .vopros{
+        width: 880px;
+    }
+    details{
+        width: 800px;
+    }
+}
+
+/* Контакты */
+.contacts{
+    margin: 0 auto;
+    width: 1106px;
+    height: 606px;
+    display: flex;
+}
+.contacts__left h5{
+    color: #2F2F51;
+}
+.contacts__telephone{
+    display: flex;
+    margin-bottom: 25px;
+}
+.contacts__telephone img{
+    margin-right: 30px;
+}
+.contacts__telephone p{
+    font-size: 18px;
+    font-weight: 700;
+}
+.contacts__map{
+    display: flex;
+}
+.contacts__map img{
+    margin-right: 30px;
+}
+.contacts__e-mail{
+    display: flex;
+    margin-bottom: 50px;
+}
+.contacts__e-mail img{
+    margin-right: 30px;
+}
+.contacts__text{
+    width: 221px;
+    color: #2F2F51;
+    margin-bottom: 20px;
+}
+.img__ikons{
+    display: flex;
+}
+.img__ikons img{
+    padding-right: 20px;
+}
+.img__master{
+    margin: -260px 0 0 280px;
+    position: absolute;
+}
+
+.contacts__right{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 511px;
+    height: 564px;
+    margin-left: 158px;
+}
+.contacts__input h1{
+    margin-top: 60px;
+    text-align: center;
+    color: #2F2F51;
+}
+.input__text{
+    padding-left: 60px;
+}
+.input__text input, textarea{
+    outline: none;
+    border: none;
+    padding: 14px 30px;
+    width: 330px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    background-color: #E2E2E2;
+    border-radius: 3px;
+    display: block;
+    margin-bottom: 25px;
+}
+.input__box-2{
+    display: flex;
+    padding-left: 60px;
+}
+.input__box-2 input{
+    width: 21px;
+    height: 39px;
+    margin-right: 10px;
+}
+.input__box-2 p{
+    width: 400px;
+    font-size: 14px;
+}
+
+.input__but-2{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 227px;
+    height: 50px;
+}
+.input__but-2 button {
+    outline: none;
+    border: none;
+    padding: 19px 40px;
+    color: #fff;
+    font-size: 14px;
+    background-color: #2F2F51;
+    border-radius: 3px;
+}
+@media screen and (max-width: 992px) {
+    .contacts{
+        margin: 0 auto;
+        display: block;
+        width: 609px;
+        height: 1193px;
+    }
+    .contacts__right{
+        margin: 0 auto;
+    }
+    .img__master{
+        position: initial;
+    }
+
+}
+
+/* подвал */
+.footer{
+    background-color: #2F2F51;
+    height: 146px;
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer__left{
+    color: white;
+    display: flex;
+}
+.footer__left img{
+    padding-right: 20px;
+}
+.footer__right{
+    color: white;
+    display: flex;
+}
+.footer__right p{
+    padding-left: 20px;
+}
